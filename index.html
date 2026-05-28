@@ -14,11 +14,19 @@ body {
 
 /* Header */
 header {
-    background: #111;
+    background: #003366;
     color: white;
-    padding: 12px;
+    padding: 15px;
     text-align: center;
-    font-size: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 35px;
+}
+
+header p {
+    margin-top: 5px;
 }
 
 /* Navbar */
@@ -31,13 +39,25 @@ nav {
 
 nav a {
     color: white;
-    padding: 10px 15px;
+    padding: 12px 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
     background: #084298;
+}
+
+/* Banner */
+.banner {
+    padding: 40px;
+    text-align: center;
+    background: #e9f2ff;
+}
+
+.banner h2 {
+    color: #003366;
+    font-size: 35px;
 }
 
 /* Buttons section */
@@ -56,6 +76,7 @@ nav a:hover {
     background: #198754;
     color: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* Main grid */
@@ -69,14 +90,14 @@ nav a:hover {
 .card {
     background: white;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .card h3 {
     background: #0d6efd;
     color: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     margin-top: 0;
 }
@@ -94,48 +115,56 @@ footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 /* Responsive */
 @media(max-width:600px) {
-    header {
-        font-size: 16px;
-    }
+
+header h1 {
+    font-size: 25px;
+}
+
+.banner h2 {
+    font-size: 24px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 14px;
+}
+
 }
 </style>
 
 </head>
 
 <body>
-    
 
-<header style="background:#003366;
-color:white;
-padding:15px;
-text-align:center;">
-
+<header>
 <h1>RKCG JOB PORTAL</h1>
 
 <p>
 Government Jobs | Private Jobs |
 CSC Services | Online Forms
 </p>
-
 </header>
 
-<section style="padding:40px;
-text-align:center;
-background:#e9f2ff;">
-
-<h2>Welcome to RKCG JOB PORTAL</h2>
-
-<p>
-Latest Government Jobs, Private Jobs,
-Online Forms, CSC Services & Placement Updates
-</p>
-
-</section>
 <nav>
 <a href="#">Home</a>
 <a href="#">Latest Jobs</a>
@@ -144,6 +173,18 @@ Online Forms, CSC Services & Placement Updates
 <a href="#">Yojana</a>
 <a href="#">Syllabus</a>
 </nav>
+
+<section class="banner">
+
+<h2>Welcome to RKCG JOB PORTAL</h2>
+
+<p>
+Latest Government Jobs, Private Jobs,
+Online Forms, CSC Services &
+Placement Updates
+</p>
+
+</section>
 
 <div class="top-buttons">
 <button>Latest Jobs</button>
@@ -213,18 +254,12 @@ Online Forms, CSC Services & Placement Updates
 </div>
 
 <footer>
-© 2026 Sarkari Job Portal | All Rights Reserved
+© 2026 RKCG JOB PORTAL | All Rights Reserved
 </footer>
 
-</body>
-   <a href="https://wa.me/917987280662" target="_blank"
-style="background:#25D366;
-color:white;
-padding:10px 20px;
-text-decoration:none;
-border-radius:5px;
-display:inline-block;
-margin-top:10px;">
+<a href="https://wa.me/917987280662"
+target="_blank"
+class="whatsapp-btn">
 Chat on WhatsApp
 </a>
 
