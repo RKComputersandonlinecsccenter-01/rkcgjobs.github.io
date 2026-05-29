@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RKCG JOB PORTAL</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 <style>
 
 *{
@@ -15,487 +18,613 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#f1f3f6;
+background:#f4f7fb;
 }
 
-/* HEADER */
+/* TOP HEADER */
 
-header{
-background:linear-gradient(90deg,#002855,#00509d);
+.top-header{
+background:white;
+padding:10px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-section{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #0d47a1;
+object-fit:cover;
+}
+
+.site-title h1{
+font-size:48px;
+font-weight:bold;
+}
+
+.site-title h1 span{
+color:red;
+}
+
+.site-title p{
+font-size:18px;
+margin-top:8px;
+font-weight:bold;
+color:#222;
+}
+
+.right-top{
+text-align:right;
+}
+
+.date{
+font-size:22px;
+font-weight:bold;
+color:#002b7f;
+margin-bottom:10px;
+}
+
+.welcome{
+font-size:20px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.search-box{
+display:flex;
+align-items:center;
+background:white;
+border:3px solid #0d47a1;
+border-radius:40px;
+overflow:hidden;
+}
+
+.search-box input{
+padding:15px;
+width:300px;
+border:none;
+outline:none;
+font-size:18px;
+}
+
+.search-box button{
+background:#0d47a1;
 color:white;
-padding:20px;
-text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.2);
-}
-
-header h1{
-font-size:40px;
-margin-bottom:8px;
-}
-
-header p{
-font-size:16px;
+border:none;
+padding:15px 22px;
+font-size:20px;
+cursor:pointer;
 }
 
 /* NAVBAR */
 
 nav{
-background:#0d6efd;
+background:#002b7f;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-position:sticky;
-top:0;
-z-index:1000;
 }
 
 nav a{
 color:white;
-padding:14px 18px;
 text-decoration:none;
+padding:18px 22px;
+font-size:20px;
 font-weight:bold;
 transition:0.3s;
 }
 
 nav a:hover{
-background:#084298;
+background:#ffc107;
+color:black;
 }
 
 /* HERO SECTION */
 
 .hero{
-background:linear-gradient(rgba(0,0,0,0.5),
-rgba(0,0,0,0.5)),
-url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400');
-background-size:cover;
-background-position:center;
-height:400px;
+margin:20px;
+background:linear-gradient(to right,#d8e9ff,#b9d7ff);
+border-radius:25px;
+padding:40px;
 display:flex;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-text-align:center;
-color:white;
-padding:20px;
+flex-wrap:wrap;
+position:relative;
+overflow:hidden;
 }
 
-.hero-content h2{
-font-size:45px;
-margin-bottom:15px;
+.hero-left{
+max-width:700px;
 }
 
-.hero-content p{
-font-size:18px;
+.hero-left h2{
+font-size:55px;
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+.hero-left h1{
+font-size:75px;
+color:red;
 margin-bottom:20px;
 }
 
-.hero-content button{
-padding:12px 25px;
-border:none;
-background:#25D366;
+.hero-box{
+background:#002b7f;
 color:white;
-font-size:16px;
-border-radius:30px;
-cursor:pointer;
+padding:18px;
+font-size:28px;
 font-weight:bold;
-transition:0.3s;
+border-radius:15px;
+line-height:1.6;
+display:inline-block;
 }
 
-.hero-content button:hover{
-background:#1da851;
-}
-
-/* TOP BUTTONS */
-
-.top-buttons{
+.tags{
+margin-top:30px;
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
-padding:15px;
+gap:15px;
+}
+
+.tag{
 background:white;
-}
-
-.top-buttons button{
-margin:8px;
-padding:10px 18px;
-border:none;
-border-radius:25px;
-background:#198754;
-color:white;
-cursor:pointer;
+padding:15px 20px;
+border-radius:15px;
+font-size:22px;
 font-weight:bold;
-transition:0.3s;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.top-buttons button:hover{
-background:#146c43;
-transform:scale(1.05);
+.hero-right{
+text-align:center;
+}
+
+.hero-right img{
+width:350px;
+max-width:100%;
+}
+
+/* FLOATING CIRCLES */
+
+.circle{
+width:120px;
+height:120px;
+background:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-weight:bold;
+position:absolute;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.circle i{
+font-size:35px;
+margin-bottom:8px;
+}
+
+.c1{
+top:40px;
+right:450px;
+}
+
+.c2{
+top:180px;
+right:500px;
+}
+
+.c3{
+top:60px;
+right:40px;
+}
+
+.c4{
+top:230px;
+right:20px;
 }
 
 /* SERVICES */
 
 .services{
 padding:40px 20px;
+}
+
+.services-title{
 text-align:center;
+font-size:45px;
+color:#002b7f;
+margin-bottom:40px;
+font-weight:bold;
 }
 
-.services h2{
-font-size:35px;
-margin-bottom:30px;
-color:#003366;
-}
-
-.service-container{
+.service-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
 .service-card{
-background:white;
-padding:25px;
-border-radius:12px;
+padding:30px;
+border-radius:20px;
+text-align:center;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
-transition:0.3s;
 }
 
-.service-card:hover{
-transform:translateY(-5px);
+.service-card i{
+font-size:50px;
+margin-bottom:15px;
 }
 
 .service-card h3{
-background:#0d6efd;
-color:white;
-padding:10px;
-border-radius:5px;
-margin-bottom:15px;
-}
-
-/* JOB SECTION */
-
-.container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-padding:20px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card h3{
-background:#0d6efd;
-color:white;
-padding:10px;
-border-radius:5px;
-margin-bottom:15px;
-}
-
-.card ul{
-padding-left:20px;
-}
-
-.card ul li{
+font-size:32px;
 margin-bottom:10px;
 }
 
-/* APPLY SECTION */
+.service-card p{
+font-size:20px;
+}
 
-.apply-section{
-background:white;
-padding:40px 20px;
+.blue{
+background:#e8f0ff;
+}
+
+.orange{
+background:#fff1e6;
+}
+
+.green{
+background:#e9fff0;
+}
+
+.pink{
+background:#ffe9f7;
+}
+
+.purple{
+background:#f4eaff;
+}
+
+/* JOB UPDATE */
+
+.job-update{
 margin:20px;
-border-radius:10px;
+background:white;
+padding:20px;
+border-radius:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.apply-section h2{
-text-align:center;
-margin-bottom:20px;
-color:#003366;
+.job-update h2{
+font-size:35px;
+color:#002b7f;
 }
 
-form{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-form input,
-form textarea{
-width:90%;
-max-width:500px;
-padding:12px;
-margin:10px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-form button{
-padding:12px 25px;
-border:none;
-background:#0d6efd;
+.job-update button{
+background:#0d47a1;
 color:white;
-border-radius:30px;
+border:none;
+padding:15px 25px;
+font-size:20px;
+border-radius:10px;
 cursor:pointer;
-font-size:16px;
-font-weight:bold;
 }
 
-form button:hover{
-background:#084298;
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+text-decoration:none;
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
+z-index:1000;
 }
 
 /* FOOTER */
 
 footer{
-background:#111;
+background:#002b7f;
 color:white;
 text-align:center;
 padding:20px;
+font-size:20px;
 margin-top:30px;
 }
 
-/* WHATSAPP BUTTON */
-
-.whatsapp-btn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:14px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 2px 10px rgba(0,0,0,0.3);
-z-index:999;
-}
-
-/* RESPONSIVE */
+/* MOBILE */
 
 @media(max-width:768px){
 
-header h1{
-font-size:28px;
+.site-title h1{
+font-size:32px;
 }
 
-.hero-content h2{
-font-size:30px;
+.hero-left h1{
+font-size:45px;
 }
 
-.hero{
-height:300px;
+.hero-left h2{
+font-size:35px;
+}
+
+.hero-box{
+font-size:18px;
+}
+
+.circle{
+display:none;
+}
+
+.search-box input{
+width:180px;
 }
 
 nav a{
-padding:10px;
-font-size:14px;
+font-size:16px;
+padding:12px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
+<!-- HEADER -->
 
-<h1>RKCG JOB PORTAL</h1>
+<div class="top-header">
+
+<div class="logo-section">
+
+<img src="https://i.imgur.com/YOURLOGO.png"
+class="logo">
+
+<div class="site-title">
+<h1>RKCG <span>JOB PORTAL</span></h1>
 
 <p>
-Government Jobs | Private Jobs |
-CSC Services | Online Forms
+Government Jobs |
+Private Jobs |
+CSC Services |
+Online Forms
+<i class="fa-solid fa-circle-check"
+style="color:#0d6efd;"></i>
 </p>
+</div>
 
-</header>
+</div>
+
+<div class="right-top">
+
+<div class="date" id="date"></div>
+
+<div class="welcome">
+Welcome to RKCG Job Portal 👋
+</div>
+
+<div class="search-box">
+
+<input type="text"
+placeholder="Search jobs...">
+
+<button>
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NAVBAR -->
 
 <nav>
 
-<a href="#">Home</a>
-<a href="#">Latest Jobs</a>
-<a href="#">Results</a>
-<a href="#">Admit Card</a>
-<a href="#">Yojana</a>
-<a href="#">Syllabus</a>
-<a href="#">Contact</a>
+<a href="#"><i class="fa-solid fa-house"></i> Home</a>
+
+<a href="#"><i class="fa-solid fa-building-columns"></i> Govt. Jobs</a>
+
+<a href="#"><i class="fa-solid fa-briefcase"></i> Private Jobs</a>
+
+<a href="#"><i class="fa-solid fa-desktop"></i> CSC Services</a>
+
+<a href="#"><i class="fa-solid fa-file-lines"></i> Online Forms</a>
+
+<a href="#"><i class="fa-solid fa-trophy"></i> Results</a>
+
+<a href="#"><i class="fa-solid fa-id-card"></i> Admit Card</a>
+
+<a href="#"><i class="fa-solid fa-phone"></i> Contact Us</a>
 
 </nav>
 
+<!-- HERO SECTION -->
+
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-left">
 
-<h2>Welcome to RKCG JOB PORTAL</h2>
+<h2>Welcome to</h2>
 
-<p>
-Find Latest Government Jobs,
-Private Jobs, CSC Services &
-Online Forms Here
-</p>
+<h1>RKCG JOB PORTAL</h1>
 
-<button>Apply Now</button>
+<div class="hero-box">
 
+Latest Government Jobs,
+Private Jobs,
+Online Forms,
+CSC Services &
+Placement Updates
+
+</div>
+
+<div class="tags">
+
+<div class="tag">✅ 100% Free</div>
+
+<div class="tag">⚡ Fast Updates</div>
+
+<div class="tag">🛡️ Trusted Source</div>
+
+<div class="tag">👤 Easy Apply</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png">
+
+</div>
+
+<div class="circle c1">
+<i class="fa-solid fa-building-columns"
+style="color:#0d47a1;"></i>
+Government Jobs
+</div>
+
+<div class="circle c2">
+<i class="fa-solid fa-briefcase"
+style="color:orange;"></i>
+Private Jobs
+</div>
+
+<div class="circle c3">
+<i class="fa-solid fa-desktop"
+style="color:green;"></i>
+CSC Services
+</div>
+
+<div class="circle c4">
+<i class="fa-solid fa-file-lines"
+style="color:#ff0080;"></i>
+Online Forms
 </div>
 
 </section>
 
-<div class="top-buttons">
-
-<button>Latest Jobs</button>
-<button>Results</button>
-<button>Admit Card</button>
-<button>Sarkari Yojana</button>
-<button>Answer Key</button>
-
-</div>
+<!-- SERVICES -->
 
 <section class="services">
 
-<h2>Our Services</h2>
+<h2 class="services-title">
+Our Services
+</h2>
 
-<div class="service-container">
+<div class="service-grid">
 
-<div class="service-card">
+<div class="service-card blue">
+
+<i class="fa-solid fa-building-columns"
+style="color:#0d47a1;"></i>
+
 <h3>Government Jobs</h3>
-<p>Latest Govt Recruitment Updates</p>
+
+<p>All Latest Govt. Job Updates</p>
+
 </div>
 
-<div class="service-card">
+<div class="service-card orange">
+
+<i class="fa-solid fa-briefcase"
+style="color:orange;"></i>
+
 <h3>Private Jobs</h3>
-<p>Private Company Job Vacancies</p>
+
+<p>Private Company Job Updates</p>
+
 </div>
 
-<div class="service-card">
+<div class="service-card green">
+
+<i class="fa-solid fa-desktop"
+style="color:green;"></i>
+
 <h3>CSC Services</h3>
-<p>Online Digital Services & Forms</p>
+
+<p>All CSC Online Services</p>
+
 </div>
 
-<div class="service-card">
+<div class="service-card pink">
+
+<i class="fa-solid fa-file-lines"
+style="color:#ff0080;"></i>
+
 <h3>Online Forms</h3>
-<p>Apply Online for Various Services</p>
+
+<p>All Online Form Updates</p>
+
+</div>
+
+<div class="service-card purple">
+
+<i class="fa-solid fa-graduation-cap"
+style="color:purple;"></i>
+
+<h3>Results & Admit Card</h3>
+
+<p>Results, Answer Key, Admit Card</p>
+
 </div>
 
 </div>
 
 </section>
 
-<div class="container">
+<!-- JOB UPDATE -->
 
-<div class="card">
+<div class="job-update">
 
-<h3>Latest Jobs</h3>
+<h2>📢 Latest Jobs Updates</h2>
 
-<ul>
-<li>SSC Vacancy 2026 – Apply Online</li>
-<li>Railway Recruitment 2026</li>
-<li>Police Bharti 2026</li>
-<li>Bank Jobs 2026</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Results</h3>
-
-<ul>
-<li>SSC Result 2026</li>
-<li>10th Board Result</li>
-<li>12th Board Result</li>
-<li>UPSC Result</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Admit Card</h3>
-
-<ul>
-<li>SSC Admit Card</li>
-<li>Railway Admit Card</li>
-<li>Bank Exam Admit Card</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Sarkari Yojana</h3>
-
-<ul>
-<li>PM Yojana List</li>
-<li>Scholarship Scheme</li>
-<li>State Yojana</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Syllabus</h3>
-
-<ul>
-<li>SSC Syllabus</li>
-<li>UPSC Syllabus</li>
-<li>Bank Exam Syllabus</li>
-
-</ul>
-
-</div>
-
-<div class="card">
-
-<h3>Answer Key</h3>
-
-<ul>
-<li>SSC Answer Key</li>
-<li>Railway Answer Key</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<section class="apply-section">
-
-<h2>Apply Now</h2>
-
-<form>
-
-<input type="text" placeholder="Enter Your Name">
-
-<input type="tel" placeholder="Mobile Number">
-
-<input type="email" placeholder="Email Address">
-
-<textarea rows="5" placeholder="Address"></textarea>
-
-<input type="file">
-
-<button type="submit">
-Submit Application
+<button>
+View All Jobs →
 </button>
 
-</form>
+</div>
 
-</section>
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/917987280662"
+class="whatsapp"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -504,13 +633,21 @@ All Rights Reserved
 
 </footer>
 
-<a href="https://wa.me/917987280662"
-target="_blank"
-class="whatsapp-btn">
+<script>
 
-Chat on WhatsApp
+let today = new Date();
 
-</a>
+let options = {
+day:'numeric',
+month:'long',
+year:'numeric'
+};
+
+document.getElementById("date").innerHTML =
+"🕒 Today: " +
+today.toLocaleDateString('en-IN',options);
+
+</script>
 
 </body>
 </html>
