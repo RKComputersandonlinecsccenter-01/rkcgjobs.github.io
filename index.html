@@ -404,7 +404,7 @@ padding:12px;
 
 <div class="logo-section">
 
-<img src="https://i.imgur.com/YOURLOGO.png"
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
 class="logo">
 
 <div class="site-title">
@@ -433,6 +433,7 @@ Welcome to RKCG Job Portal 👋
 <div class="search-box">
 
 <input type="text"
+id="searchInput"
 placeholder="Search jobs...">
 
 <button>
@@ -628,12 +629,15 @@ target="_blank">
 
 <footer>
 
-© 2026 RKCG JOB PORTAL | All Rights Reserved
+© 2026 RKCG JOB PORTAL |
+All Rights Reserved
 
 <br><br>
 
 Designed & Developed By
 RK Computers & CSC Center
+
+</footer>
 
 </footer>
 
@@ -650,7 +654,26 @@ year:'numeric'
 document.getElementById("date").innerHTML =
 "🕒 Today: " +
 today.toLocaleDateString('en-IN',options);
+function searchJobs(){
 
+let text =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+if(text.includes("ssc")){
+alert("SSC Jobs Found");
+}
+else if(text.includes("railway")){
+alert("Railway Jobs Found");
+}
+else if(text.includes("bank")){
+alert("Bank Jobs Found");
+}
+else{
+alert("No Matching Job Found");
+}
+
+}
 </script>
 
 </body>
