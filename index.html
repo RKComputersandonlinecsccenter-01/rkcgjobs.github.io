@@ -135,8 +135,8 @@ color:black;
 margin:20px;
 background:linear-gradient(to right,#d8e9ff,#b9d7ff);
 border-radius:25px;
-padding:25px  40px;
-  min-height:420px;
+padding:25px;
+  min-height:450px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -193,15 +193,17 @@ text-align:center;
 }
 
 .hero-right img{
-width:350px;
+width:260px;
 max-width:100%;
 }
 
 /* FLOATING CIRCLES */
 
 .circle{
-width:120px;
-height:120px;
+width:90px;
+height:90px;
+  font-size:14px;
+}
 background:white;
 border-radius:50%;
 display:flex;
@@ -214,7 +216,7 @@ box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .circle i{
-font-size:35px;
+font-size:24px;
 margin-bottom:8px;
 }
 
@@ -259,6 +261,14 @@ gap:20px;
 }
 
 .service-card{
+  transition:0.3s;
+cursor:pointer;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 padding:30px;
 border-radius:20px;
 text-align:center;
@@ -319,15 +329,20 @@ color:#002b7f;
 }
 
 .job-update button{
-background:#0d47a1;
+background:linear-gradient(45deg,#0d47a1,#2196f3);
 color:white;
 border:none;
-padding:15px 25px;
-font-size:20px;
-border-radius:10px;
+padding:15px 30px;
+font-size:18px;
+font-weight:bold;
+border-radius:50px;
 cursor:pointer;
+transition:0.3s;
 }
 
+.job-update button:hover{
+transform:scale(1.05);
+}
 /* WHATSAPP */
 
 .whatsapp{
@@ -606,15 +621,21 @@ style="color:purple;"></i>
 
 <!-- JOB UPDATE -->
 
-<div class="job-update">
+.job-update button{
+background:linear-gradient(45deg,#0d47a1,#2196f3);
+color:white;
+border:none;
+padding:15px 30px;
+font-size:18px;
+font-weight:bold;
+border-radius:50px;
+cursor:pointer;
+transition:0.3s;
+}
 
-<h2>📢 Latest Jobs Updates</h2>
-
-<button>
-View All Jobs →
-</button>
-
-</div>
+.job-update button:hover{
+transform:scale(1.05);
+}
 
 <!-- WHATSAPP -->
 
