@@ -533,7 +533,7 @@ Welcome to RKCG Job Portal 👋
 id="searchInput"
 placeholder="Search jobs...">
 
-<button>
+<button onclick="searchJobs()">
 <i class="fa-solid fa-magnifying-glass"></i>
 </button>
 
@@ -815,6 +815,27 @@ else{
 alert("No Matching Job Found");
 }
 
+}
+  function searchJobs(){
+
+let search =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+if(search.includes("ssc")){
+alert("SSC Jobs Found");
+}
+
+else if(search.includes("railway")){
+alert("Railway Jobs Found");
+}
+
+else if(search.includes("police")){
+alert("Police Jobs Found");
+}
+
+else{
+alert("No Jobs Found");
 }
 </script>
 
