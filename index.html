@@ -793,27 +793,8 @@ year:'numeric'
 document.getElementById("date").innerHTML =
 "🕒 Today: " +
 today.toLocaleDateString('en-IN',options);
+
 function searchJobs(){
-
-let text =
-document.getElementById("searchInput")
-.value.toLowerCase();
-
-if(text.includes("ssc")){
-alert("SSC Jobs Found");
-}
-else if(text.includes("railway")){
-alert("Railway Jobs Found");
-}
-else if(text.includes("bank")){
-alert("Bank Jobs Found");
-}
-else{
-alert("No Matching Job Found");
-}
-
-}
-  function searchJobs(){
 
 let search =
 document.getElementById("searchInput")
@@ -831,10 +812,14 @@ else if(search.includes("police")){
 alert("Police Jobs Found");
 }
 
+else if(search.includes("bank")){
+alert("Bank Jobs Found");
+}
+
 else{
 alert("No Jobs Found");
 }
-    
+
 </script>
 
 </body>
