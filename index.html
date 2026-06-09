@@ -383,12 +383,20 @@ margin-bottom:15px;
 }
 
 .job-card button{
-background:#0d47a1;
+background:linear-gradient(45deg,#0d47a1,#2196f3);
 color:white;
 border:none;
-padding:10px 20px;
-border-radius:8px;
+padding:12px 25px;
+border-radius:50px;
 cursor:pointer;
+font-weight:bold;
+font-size:16px;
+transition:0.3s;
+}
+
+.job-card button:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(33,150,243,0.4);
 }
  .jobs-category{
 padding:40px 20px;
@@ -400,6 +408,26 @@ font-size:40px;
 color:#002b7f;
 margin-bottom:25px;
 } 
+
+.contact-section{
+background:white;
+padding:40px;
+margin:20px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 3px 15px rgba(0,0,0,0.1);
+}
+
+.contact-section h2{
+color:#002b7f;
+margin-bottom:20px;
+font-size:38px;
+}
+
+.contact-section p{
+font-size:20px;
+margin:10px 0;
+}
 /* WHATSAPP */
 
 .whatsapp{
@@ -426,9 +454,20 @@ footer{
 background:#002b7f;
 color:white;
 text-align:center;
-padding:20px;
-font-size:20px;
-margin-top:50px;
+padding:30px;
+margin-top:30px;
+}
+
+.footer-logo{
+font-size:30px;
+font-weight:bold;
+margin-bottom:15px;
+color:#ffc107;
+}
+
+footer p{
+margin:8px 0;
+font-size:18px;
 }
 
 /* MOBILE */
@@ -436,7 +475,11 @@ margin-top:50px;
 @media(max-width:768px){
 
 .site-title h1{
-font-size:32px;
+font-size:48px;
+font-weight:900;
+letter-spacing:2px;
+color:#002b7f;
+text-shadow:2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .hero-left h1{
@@ -720,25 +763,39 @@ View All Jobs →
 
 <div class="jobs-grid">
 
-<div class="job-card"  id="govt-jobs">
+<div class="job-card">
 <h3>SSC CGL 2026</h3>
-<p>Last Date: 15 July 2026</p>
+
+<p>📅 Last Date: 15 July 2026</p>
+
+<p>👥 Vacancies: 14500+</p>
+
 <button>Apply Now</button>
+
 </div>
 
-<div class="job-card" id="govt-jobs">
+<div class="job-card">
 <h3>Railway Group D</h3>
-<p>Last Date: 20 July 2026</p>
+
+<p>📅 Last Date: 20 July 2026</p>
+
+<p>👥 Vacancies: 32000+</p>
+
 <button>Apply Now</button>
+
 </div>
 
-<div class="job-card" id="govt-jobs">
+<div class="job-card">
 <h3>CG Police Constable</h3>
-<p>Last Date: 30 July 2026</p>
+
+<p>📅 Last Date: 30 July 2026</p>
+
+<p>👥 Vacancies: 6000+</p>
+
 <button>Apply Now</button>
-</div>
 
 </div>
+
 
 </section>
  <section class="jobs-category" id="govt-jobs">
@@ -768,6 +825,20 @@ View All Jobs →
 </div>
 
 </section>
+  
+<section class="contact-section">
+
+<h2>📞 Contact Us</h2>
+
+<p><strong>RK Computers & CSC Center</strong></p>
+
+<p>📍 Sakti, Chhattisgarh</p>
+
+<p>📞 +91 7987280662</p>
+
+<p>📧 rkcgjobportal@gmail.com</p>
+
+</section>
 <!-- WHATSAPP -->
 
 <a href="https://wa.me/917987280662"
@@ -782,13 +853,23 @@ target="_blank">
 
 <footer>
 
-© 2026 RKCG JOB PORTAL |
-All Rights Reserved
+<div class="footer-logo">
+RKCG JOB PORTAL
+</div>
 
-<br><br>
+<p>
+Government Jobs | Private Jobs |
+CSC Services | Online Forms
+</p>
 
+<p>
+© 2026 RKCG JOB PORTAL
+</p>
+
+<p>
 Designed & Developed By
 RK Computers & CSC Center
+</p>
 
 </footer>
 
