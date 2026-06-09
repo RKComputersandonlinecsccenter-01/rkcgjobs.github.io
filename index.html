@@ -398,6 +398,31 @@ transition:0.3s;
 transform:scale(1.05);
 box-shadow:0 5px 15px rgba(33,150,243,0.4);
 }
+.job-info{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin:15px 0;
+}
+
+.last-date{
+background:#fff3cd;
+color:#856404;
+padding:8px 12px;
+border-radius:20px;
+font-weight:bold;
+display:inline-block;
+}
+
+.vacancy{
+background:#d4edda;
+color:#155724;
+padding:8px 12px;
+border-radius:20px;
+font-weight:bold;
+display:inline-block;
+}
+  
  .jobs-category{
 padding:40px 20px;
 }
@@ -764,38 +789,43 @@ View All Jobs →
 <div class="jobs-grid">
 
 <div class="job-card">
+
 <h3>SSC CGL 2026</h3>
 
-<p>📅 Last Date: 15 July 2026</p>
-
-<p>👥 Vacancies: 14500+</p>
+<div class="job-info">
+<span class="last-date">📅 Last Date: 15 July 2026</span>
+<span class="vacancy">👥 14500+ Vacancies</span>
+</div>
 
 <button>Apply Now</button>
 
 </div>
 
 <div class="job-card">
+
 <h3>Railway Group D</h3>
 
-<p>📅 Last Date: 20 July 2026</p>
-
-<p>👥 Vacancies: 32000+</p>
+<div class="job-info">
+<span class="last-date">📅 Last Date: 20 July 2026</span>
+<span class="vacancy">👥 32000+ Vacancies</span>
+</div>
 
 <button>Apply Now</button>
 
 </div>
 
 <div class="job-card">
+
 <h3>CG Police Constable</h3>
 
-<p>📅 Last Date: 30 July 2026</p>
-
-<p>👥 Vacancies: 6000+</p>
+<div class="job-info">
+<span class="last-date">📅 Last Date: 30 July 2026</span>
+<span class="vacancy">👥 6000+ Vacancies</span>
+</div>
 
 <button>Apply Now</button>
 
 </div>
-
 
 </section>
  <section class="jobs-category" id="govt-jobs">
