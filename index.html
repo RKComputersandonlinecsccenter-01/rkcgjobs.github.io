@@ -142,25 +142,30 @@ color:black;
 /* NOTICE BOARD */
 
 .notice-board{
-background:linear-gradient(90deg,#002b7f,#0d47a1);
-padding:12px;
+background:white;
 display:flex;
 align-items:center;
-font-size:18px;
-font-weight:bold;
-color:white;
-border:none;
-box-shadow:0 2px 10px rgba(0,0,0,0.15);
+padding:0;
+margin:15px 20px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
-  
-.notice-board span{
-color:#ffc107;
-margin-right:10px;
+
+.notice-label{
+background:linear-gradient(45deg,#ff0000,#ff6600);
+color:white;
+font-weight:bold;
+padding:14px 20px;
+font-size:18px;
 white-space:nowrap;
 }
 
 .notice-board marquee{
-color:white;
+padding:14px;
+font-size:18px;
+font-weight:bold;
+color:#002b7f;
 }
 /* HERO SECTION */
 
@@ -717,14 +722,16 @@ placeholder="Search jobs...">
 
 <div class="notice-board">
 
-<span>📢 Latest Updates :</span>
+<div class="notice-label">
+🚨 BREAKING NEWS
+</div>
 
 <marquee>
 
-SSC CGL 2026 Notification Released |
-Railway Group D Recruitment Started |
-CG Police Constable Vacancy Open |
-Bank Recruitment 2026 Online Form Available
+🔥 SSC CGL 2026 Notification Released |
+🚂 Railway Group D Recruitment Started |
+👮 CG Police Constable Vacancy Open |
+🏦 Bank Recruitment 2026 Online Form Available
 
 </marquee>
 
