@@ -160,7 +160,17 @@ padding:14px 20px;
 font-size:18px;
 white-space:nowrap;
 }
+  
+@keyframes blink{
+50%{
+opacity:0.6;
+}
+}
 
+.notice-label{
+animation:blink 1s infinite;
+}
+  
 .notice-board marquee{
 padding:14px;
 font-size:18px;
