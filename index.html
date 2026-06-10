@@ -1101,20 +1101,24 @@ let search =
 document.getElementById("searchInput")
 .value.toLowerCase();
 
-if(search.includes("ssc")){
-alert("SSC Jobs Found");
-}
-else if(search.includes("railway")){
-alert("Railway Jobs Found");
-}
-else if(search.includes("police")){
-alert("Police Jobs Found");
+let cards =
+document.querySelectorAll(".job-card");
+
+cards.forEach(card => {
+
+if(
+card.innerText.toLowerCase()
+.includes(search)
+){
+card.style.display = "block";
 }
 else{
-alert("No Jobs Found");
+card.style.display = "none";
 }
 
-}   
+});
+
+}
 <!-- ye function ka closing bracket hai -->
   
 const counters = document.querySelectorAll('.counter');
