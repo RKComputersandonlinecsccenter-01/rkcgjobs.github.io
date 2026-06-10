@@ -1095,7 +1095,7 @@ document.getElementById("date").innerHTML =
 "🕒 Today: " +
 today.toLocaleDateString('en-IN',options);
 
-function searchJobs(){
+ffunction searchJobs(){
 
 let search =
 document.getElementById("searchInput")
@@ -1107,6 +1107,7 @@ document.querySelectorAll(".job-card");
 cards.forEach(card => {
 
 if(
+search === "" ||
 card.innerText.toLowerCase()
 .includes(search)
 ){
