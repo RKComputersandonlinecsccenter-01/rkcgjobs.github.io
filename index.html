@@ -1097,7 +1097,7 @@ document.getElementById("date").innerHTML =
 "🕒 Today: " +
 today.toLocaleDateString('en-IN',options);
 
-function searchJobs(){
+ffunction searchJobs(){
 
 let search =
 document.getElementById("searchInput")
@@ -1106,20 +1106,47 @@ document.getElementById("searchInput")
 let cards =
 document.querySelectorAll(".job-card");
 
+let foundCard = null;
+
 cards.forEach(card => {
 
 if(
 search === "" ||
-card.innerText.toLowerCase()
-.includes(search)
+card.innerText.toLowerCase().includes(search)
 ){
+
 card.style.display = "block";
+
+if(
+!foundCard &&
+search !== "" &&
+card.innerText.toLowerCase().includes(search)
+){
+foundCard = card;
+}
+
 }
 else{
 card.style.display = "none";
 }
 
 });
+
+if(foundCard){
+
+alert("Job Found ✅");
+
+foundCard.scrollIntoView({
+behavior:"smooth",
+block:"center"
+});
+
+}
+else if(search !== ""){
+
+alert("No Job Found ❌");
+
+}
 
 }
 // ye function ka closing bracket hai
